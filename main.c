@@ -40,13 +40,11 @@ int main(int argc, char const *argv[])
 
 	ClearStack();
 
-	c = GetValueOnStack(2);
-
 	return 0;
 }
 
 void CreateStack(){
-	StackP newStack = (StackP) malloc(sizeof(Stack));
+	StackP newStack;
 
 	newStack->size = 0;
 	newStack->stack_head = (void *) malloc(sizeof(StackValue)*0);
