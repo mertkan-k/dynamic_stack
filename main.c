@@ -47,7 +47,7 @@ void CreateStack(){
 	StackP newStack;
 
 	newStack->size = 0;
-	newStack->stack_head = (void *) malloc(sizeof(StackValue)*0);
+	newStack->stack_head = malloc(sizeof(StackValue)*0);
 
 	mainStack = newStack;
 }
