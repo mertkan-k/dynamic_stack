@@ -44,7 +44,7 @@ int main(int argc, char const *argv[])
 }
 
 void CreateStack(){
-	StackP newStack;
+	StackP newStack = malloc(sizeof(Stack));
 
 	newStack->size = 0;
 	newStack->stack_head = malloc(sizeof(StackValue)*0);
